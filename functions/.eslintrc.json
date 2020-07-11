@@ -1,0 +1,29 @@
+{
+  "env": {
+      "browser": true,
+      "es2020": true
+  },
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+      "ecmaVersion": 11,
+      "sourceType": "module"
+  },
+  "plugins": [
+      "@typescript-eslint",
+      "prettier"
+  ],
+  "rules": {
+    "prettier/prettier": "error",
+    "semi": ["error", "never", {"beforeStatementContinuationChars": "never"}],
+    "semi-spacing": ["error", {"after": true, "before": false}],
+    "semi-style": ["error", "first"],
+    "no-extra-semi": "error",
+    "no-unexpected-multiline": "error",
+    "no-unreachable": "error"
+  }
+}
